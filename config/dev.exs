@@ -5,7 +5,7 @@ config :close_treatments, CloseTreatments.Repo,
   username: "root",
   password: "root",
   database: "close_treatments_dev",
-  hostname: "localhost",
+  hostname: "172.27.0.2",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
@@ -17,7 +17,7 @@ config :close_treatments, CloseTreatments.Repo,
 # with webpack to recompile .js and .css sources.
 config :close_treatments, CloseTreatmentsWeb.Endpoint,
   http: [port: 4000],
-  debug_errors: true,
+  debug_errors: false,
   code_reloader: true,
   check_origin: false,
   watchers: []
