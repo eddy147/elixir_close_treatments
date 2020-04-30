@@ -16,3 +16,39 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+# Usage
+## URL http://localhost:4000/treatments
+## List of treatments
+GET {URL}<br>
+Response:
+```
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Treatment 1",
+            "status": "open"
+        }
+    ]
+}
+```
+
+## Create a treatment
+POST {URL}<br>
+body:
+```
+{
+  "treatment":{"name": "Treatment 1", "status": "open"}
+}
+```
+Response:
+```
+{
+    "data": {
+        "id": 1,
+        "name": "Treatment 1",
+        "status": "open"
+    }
+}
+```
