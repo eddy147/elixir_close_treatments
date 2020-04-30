@@ -17,9 +17,10 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
 
-# Usage
-## URL http://localhost:4000/treatments
-## List of treatments
+## Usage
+URL http://localhost:4000/treatments
+
+### List of treatments
 GET {URL}<br>
 Response:
 ```
@@ -34,7 +35,7 @@ Response:
 }
 ```
 
-## Create a treatment
+### Create a treatment
 POST {URL}<br>
 body:
 ```
