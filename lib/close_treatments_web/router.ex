@@ -7,7 +7,6 @@ defmodule CloseTreatmentsWeb.Router do
 
   scope "/api", CloseTreatmentsWeb do
     pipe_through :api
-    resources "/treatments""
   end
 
   # Enables LiveDashboard only for development
